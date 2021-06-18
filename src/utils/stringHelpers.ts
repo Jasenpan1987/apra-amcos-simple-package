@@ -6,4 +6,4 @@ export const reverseCamelCase = (str: string) =>
 export const reverseSnakeCase = (str: string) =>
   snakeCase(str).split("").reverse().join("").concat("------");
 
-export const addChar = (str: string) => padEnd(str, 10, "!!!");
+export const addChar = (str: string, pad: string) => padEnd(str, 10, pad);
